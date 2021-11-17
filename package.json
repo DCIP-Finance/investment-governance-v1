@@ -1,0 +1,45 @@
+{
+  "name": "dcip-otc-sale",
+  "version": "1.0.0",
+  "description": "Over the counter sale",
+  "main": "index.js",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.10",
+    "@typechain/ethers-v5": "^7.0.1",
+    "@typechain/hardhat": "^2.3.0",
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "chai-ethers": "^0.0.1",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "ethereumjs-util": "^6.2.0",
+    "ethers": "^5.4.5",
+    "hardhat": "^2.6.4",
+    "hardhat-contract-sizer": "^2.0.3",
+    "hardhat-deploy": "^0.9.0",
+    "hardhat-gas-reporter": "^1.0.4",
+    "mocha": "^6.2.2",
+    "ncp": "^2.0.0",
+    "prettier": "^1.19.1",
+    "solc": "0.6.6",
+    "solhint": "^3.3.3",
+    "ts-node": "^8.5.4",
+    "typechain": "^5.1.2",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "test": "hardhat test",
+    "deploy": "hardhat deploy",
+    "verify": "hardhat etherscan-verify",
+    "compile": "waffle .waffle.json",
+    "lint": "npm run prettier ./test/*.ts --check",
+    "lint:fix": "npm prettier ./test/*.ts --write",
+    "clean": "rimraf ./build/"
+  },
+  "author": "Rick van Melis",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.1"
+  }
+}
